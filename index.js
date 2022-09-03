@@ -59,7 +59,7 @@ function updateRecord(formData) {
 
 // Dleteing Record--------------------------------------------------------------------------
 function onDelete(td) {
-  if (confirm("Are you want to delete this record ?")) {
+  if (confirm("Are you sure you want to delete this record ?")) {
     row = td.parentElement.parentElement;
     document.getElementById("empList").deleteRow(row.rowIndex);
     resetForm();
