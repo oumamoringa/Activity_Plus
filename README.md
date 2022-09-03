@@ -12,4 +12,4 @@ This website will enable an employer to remotely get employees’ details. The m
 
 ## Sample
 
-![This is an image](./images/sample-image.png)
+![This is an image](./images/web_sample.png)
