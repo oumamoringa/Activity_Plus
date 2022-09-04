@@ -6,7 +6,7 @@ function onFormSubmit() {
   else updateRecord(formData);
   resetForm();
 }
-// Getting value from User-----------------------------------------------------
+// Getting value from User
 function readFormData() {
   var formData = {};
   formData["name"] = document.getElementById("name").value;
@@ -16,7 +16,7 @@ function readFormData() {
   return formData;
 }
 
-// Inserting & Showing Record in Another Table-----------------------------------------------
+// Inserting & Showing Record in Another Table
 function insertNewRecord(data) {
   let table = document
     .getElementById("empList")
@@ -34,14 +34,14 @@ function insertNewRecord(data) {
   cell5.innerHTML = `<a onclick="onDelete(this)">Delete</a>`;
 }
 
-// Reseting Form---------------------------------------------------------------------------
+// Reseting Form
 function resetForm() {
   document.getElementById("name").value = "";
   document.getElementById("city").value = "";
   document.getElementById("salary").value = "";
   selectRow = null;
 }
-// Editing Record ----------------------------------------------------------------------------
+// Editing Record
 
 function onEdit(td) {
   selectRow = td.parentElement.parentElement;
@@ -50,14 +50,14 @@ function onEdit(td) {
   document.getElementById("salary").value = selectRow.cells[2].innerHTML;
 }
 
-// Update Record-----------------------------------------------------------------------------
+// Update Record
 function updateRecord(formData) {
   selectRow.cells[0].innerHTML = formData.name;
   selectRow.cells[1].innerHTML = formData.city;
   selectRow.cells[2].innerHTML = formData.salary;
 }
 
-// Dleteing Record--------------------------------------------------------------------------
+// Dleteing Record
 function onDelete(td) {
   if (confirm("Are you sure you want to delete this record ?")) {
     row = td.parentElement.parentElement;
