@@ -6,6 +6,8 @@ function onFormSubmit() {
   else updateRecord(formData);
   resetForm();
 }
+
+
 // Getting value from User
 function readFormData() {
   var formData = {};
@@ -34,8 +36,9 @@ function insertNewRecord(data) {
   cell5.innerHTML = `<a onclick="onDelete(this)">Delete</a>`;
 }
 
+
 // Reseting Form
-function resetForm() {
+const resetForm = () => {
   document.getElementById("name").value = "";
   document.getElementById("city").value = "";
   document.getElementById("salary").value = "";
