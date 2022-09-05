@@ -13,4 +13,5 @@
 
 ## Sample
 
-![This is an image](./images/web_sample.png)
+- The below image is the sample of the webiste on how it should function.
+  ![This is an image](./images/web_sample.png)
