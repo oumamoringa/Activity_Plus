@@ -4,6 +4,7 @@
 
 - This website will enable an employer to remotely get employees’ details. The main function of this website is to record employees' details, that is, including their salary.
 - This website will also enable an emploeyer to keep employees' data.
+- This website will help different business to limit the use of hardcopy materials like record books.
 
 ## Technique Used
 
