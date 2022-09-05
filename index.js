@@ -46,7 +46,7 @@ const resetForm = () => {
 }
 // Editing Record
 
-function onEdit(td) {
+const onEdit = (td) => {
   selectRow = td.parentElement.parentElement;
   document.getElementById("name").value = selectRow.cells[0].innerHTML;
   document.getElementById("city").value = selectRow.cells[1].innerHTML;
